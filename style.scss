@@ -1,3 +1,42 @@
-h1 {
-  color: red;
+/* NAV */
+
+header nav {
+  display: block;
+}
+
+
+nav li {
+  list-style: none;
+  display: inline;
+  margin-bottom: 40px;
+  padding: 2px;
+  width: 220px;
+}
+
+nav li a {
+  text-decoration: none;
+  font-family: helvetica;
+  font-size: 17px;
+  font-weight: lighter;
+  color: black;
+  list-style: none;
+}
+
+nav li a span {
+  visibility: hidden;
+}
+
+/* ALLGEMEIN */
+
+p {
+  font-size: 15px;
+  text-align: justify;
+  font-family: helvetica;
+}
+
+
+div#container {
+  margin-top: 40px;
+  position: relative;
+  font-family: helvetica;
 }

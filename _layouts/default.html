@@ -2,18 +2,20 @@
 
 <meta charset="utf-8">
 
-<title>petra und der wolf {{page.title}}</title>
+<title>Hannah {{page.title}}</title>
 
 <link rel="stylesheet" href="/css/style.css">
 
 <header>
 
   <nav>
-    <a href="/">band</a>
+    <a href="/">Home</a>
 
-    <a href="/">live</a>
+    <div class="gallery-links">
+      <!-- The actual links to the galleries will be created by JavaScript -->
+    </div>
 
-    <a href="/contact.html">media</a>
+    <a href="/contact.html">Kontakt</a>
   </nav>
 
 </header>
@@ -25,3 +27,17 @@
 </div>
 
 <footer></footer>
+
+<script>
+  // The list of all static files provided by Jekyll
+  var files = [];
+
+  // Populating the list of files. They will be filtered later on with JS in
+  // gallery.js
+  {% for file in site.static_files %}
+    files.push('{{file.path}}');
+  {% endfor %}
+
+</script>
+
+<script src="/script/gallery.js"></script>

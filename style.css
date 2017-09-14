@@ -34,7 +34,9 @@ div#container {
 }
 
 div#main {
-  margin: 50px;
+  margin-top:20px;
+  margin-left: 50px;
+  margin-right: 50px;
   max-width: 600px;
 }
 

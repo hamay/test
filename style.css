@@ -1,14 +1,11 @@
 /* NAV */
 
 .topnav {
-
     padding: 40px;
-    float: left;
     margin-top: 10px;
 }
 
 .topnav a {
-  float: left;
   text-decoration: none;
   font-family: helvetica;
   font-size: 17px;
@@ -37,7 +34,7 @@ div#container {
 }
 
 div#main {
-  margin-left:40px;
+  margin: 50px;
   max-width: 600px;
 }
 

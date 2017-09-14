@@ -1,29 +1,14 @@
-<!DOCTYPE html>
+---
+layout: default
+---
 
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="style.css">
-<title>PIKLERnest</title>
-
-<div id="container">
-	<header>
-		<div class="topnav" id="myTopnav">
-   			<a href="uebermich.html">Über mich</a>
-   			<a href="betreuung.html">Betreuung</a>
-    		<a href="spielraum.html">Spielraum</a>
-    		<a href="yoga.html">Yoga</a>
-    		<a href="kontakt.html">Kontakt</a>
-    		<a href="links.html">Links</a>
-    		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
-    	</div>
-    </header>
-  
-	<div id="main">
+<div id="main">
 		<h1>Willkommen im Pikler-Nest!</h1>
 		<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. 
 		Lorem ipsum dolor sit amet, cons ectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
 Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci 
 		</p>
-	</div>
+</div>
 	
 	<footer></footer>
 </div>

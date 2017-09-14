@@ -4,6 +4,32 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 <title>PIKLERnest</title>
 
+<div id="container">
+	<header>
+		<div class="topnav" id="myTopnav">
+   			<a href="uebermich.html">Über mich</a>
+   			<a href="betreuung.html">Betreuung</a>
+    		<a href="spielraum.html">Spielraum</a>
+    		<a href="yoga.html">Yoga</a>
+    		<a href="kontakt.html">Kontakt</a>
+    		<a href="links.html">Links</a>
+    		<a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    	</div>
+    </header>
+
 {{ content }}
 
-Copyright Hantschl
+<footer>Copyright Hantschl</footer>
+</div>
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+

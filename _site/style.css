@@ -1,16 +1,13 @@
 /* NAV */
 
 .topnav {
-
     padding: 40px;
-    float: left;
     margin-top: 10px;
 }
 
 .topnav a {
-  float: left;
   text-decoration: none;
-  font-family: helvetica;
+  font-family: helvetica, arial, sans-serif;
   font-size: 17px;
   font-weight: lighter;
   color: black;
@@ -23,6 +20,14 @@
     color: white;
 }
 
+/* BILDER */
+
+img#big {
+	width:600px;
+	height:400px;
+	float:left;
+}
+
 /* ALLGEMEIN */
 
 p {
@@ -33,11 +38,13 @@ p {
 
 
 div#container {
-  font-family: helvetica;
+  font-family: helvetica, arial, sans-serif;
 }
 
 div#main {
-  margin-left:40px;
+  margin-top:20px;
+  margin-left: 50px;
+  margin-right: 50px;
   max-width: 600px;
 }
 

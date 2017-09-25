@@ -15,6 +15,8 @@ html {
 header {
   background-color: #fac944;
   text-align: center;
+  position: sticky;
+  top: 0;
 }
 
 .header-image {
@@ -99,7 +101,7 @@ header {
 
 p {
   font-weight: lighter;
-  line-height: 140%;
+  line-height: 1.5rem;
 }
 
 h1 {
@@ -124,6 +126,11 @@ div#container {
     position: relative;
     z-index: 100;
   }
+
+  header {
+    position: initial;
+  }
+
   .topnav {
     display: none;
     position: absolute;
@@ -132,6 +139,7 @@ div#container {
     background: #fac944;
     padding: 0.5rem 0;
   }
+
   a.menu-toggle {
     float: right;
     display: block;

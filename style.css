@@ -1,35 +1,34 @@
 /* NAV */
 
+/*
 .topnav {
-    padding-top: 100px;
-    margin-top: -10px;
-    margin-left: -10px;
-    text-align: center;
+    float: left;
+    padding-top: 190px;
     background: #fac944;
-    position: fixed;
-    width: 105%;
-    z-index: 150;
+    text-align: center;
+    width: 100%;
+    height: 4em;
 }
+
 
 .balken {
     padding: 60px;
-    margin-top: 50px;
+    margin-top: 150px;
     margin-left: -20px;
     background:  #fac944;
-    -ms-transform: rotate(-3deg); /* IE 9 */
-    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera */
+    -ms-transform: rotate(-3deg); IE 9
+    -webkit-transform: rotate(-3deg); /* Chrome, Safari, Opera
     transform: rotate(-3deg);
     position: fixed;
     width: 100%;
     z-index: 100;
-}
+  }
+
+
 
 .topnav a {
   text-decoration: none;
-  font-family: helvetica, arial, sans-serif;
   font-size: 20px;
-  font-weight: lighter;
-  list-style: none;
   padding: 10px;
   color: white;
 }
@@ -39,7 +38,37 @@
     color: white;
 }
 
-/* FLEX */
+*/
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #fac944;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #DC5133;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+
+
+/* CONTENT */
 
 .flex-container {
   display: flex; /* or inline-flex */
@@ -47,29 +76,51 @@
   width: 100%;
   margin: auto;
   flex-wrap: wrap;
+  justify-content: center;
 }
-
-
 
 .flex-item {
     -webkit-flex-grow: 0; /* Safari 6.1+ */
     -webkit-flex-shrink: 0; /* Safari 6.1+ */
-    -webkit-flex-basis: 400px; /* Safari 6.1+ */
+    -webkit-flex-basis: 450px; /* Safari 6.1+ */
     flex-grow: 0;
     flex-shrink: 1;
-    flex-basis: 400px;
+    flex-basis: 450px;
     justify-content: center;
     padding: 0px;
 }
 
 #text {
-  padding: 20px;
+  padding: 25px;
+  -webkit-flex-basis: 400px;
+  flex-basis: 400px;
+}
+
+#cit {
+  padding-left: 75px;
+  padding-right: 75px;
+  padding-top: 30px;
+  -webkit-flex-basis: 300px;
+  flex-basis: 300px;
+}
+
+.author {
+  font-style: normal;
+  font-weight: bold;
+  text-align: right;
+  color: #50b8a1;
+}
+
+.cit {
+  color: #50b8a1;
+  font-style: italic;
 }
 
 img {
   max-width:100%;
   max-height:100%
 }
+
 
 /* ALLGEMEIN */
 
@@ -79,30 +130,24 @@ p {
   line-height: 140%;
 }
 
-body {
+h1 {
+  font-size: 20px;
+  color: #871800;
+}
 
+body {
+  margin: 0px;
 }
 
 div#container {
   font-family: helvetica, arial, sans-serif;
 }
 
-div#main {
-  position: relative;
-  top: 180px;
-}
+/* MOBILE */
 
-h1 {
-  font-size: 20px;
-  color: #871800;
-}
 
-/* RESPONSIVE */
 
-.topnav .icon {
-  display: none;
-}
-
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 600px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
@@ -111,6 +156,7 @@ h1 {
   }
 }
 
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
@@ -124,5 +170,3 @@ h1 {
     text-align: left;
   }
 }
-
-

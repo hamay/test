@@ -7,8 +7,9 @@
 
 <div id="container">
   <header>
-    <nav class="balken"></nav>
+
     <nav id="MyTopnav" class="topnav">
+      <a href="index.html" id="home"><img src="img/logo.png" alt="logo"></a>
       <a href="uebermich.html">Über mich</a>
       <a href="betreuung.html">Betreuung</a>
       <a href="spielraum.html">Spielraum</a>
@@ -17,47 +18,47 @@
       <a href="links.html">Links</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
     </nav>
-    <nav id="MyTopnav2" class="topnav2">
-    </nav>
 
   </header>
 
   <div id="main">
 
-  <div class="flex-container">
-    <div class="flex-item"><img src="img/gruppe.jpg" alt="betreuung" /></div>  
+  <p>```html</p>
+
+<div class="flex-container">
+
+    <div class="flex-item"><img src="img/betreuung.jpg" alt="betreuung" /></div>  
+
+    <div class="flex-item" id="cit"><p class="cit">Wesentlich ist, dass das Kind möglichst viele Dinge selbst entdeckt. Wenn wir ihm bei der Lösung aller Aufgaben behilflich sind, berauben wir es gerade dessen, was für seine geistige Entwicklung das wichtigste ist.</p><p class="author">- Emmi Pikler</p></div>
+
     <div class="flex-item" id="text"><h1>Betreuung</h1><p>Ich bin seit 2007 als Tagesmutter bei der Volkshilfe angestellt und leite als Pikler-Pädagogin eine kleine Gruppe von jeweils fünf Kindern im Alter von 1,5-3 Jahren. Die Betreuungszeiten sind Mo-Fr 8-15 Uhr.</p></div>
-   
+
+    <div class="flex-item"><img src="img/zunge.jpg" alt="betreuung" /></div>
+    <div class="flex-item"><img src="img/spielplatz.jpg" alt="betreuung" /></div>
+
     <div class="flex-item" id="text"><h1>Tagesablauf</h1>
-  <p>Unser Tagesablauf umfasst den täglichen Spaziergang auf den Spielplatz im Augarten, dann in der Wohnung  viel Zeit einerseits für die Pflegesituationen Essen und Wickeln und andererseits freies Spiel und Bewegung in vorbereiteter Umgebung, danach Mittagschlaf.</p><h1>Anmeldung</h1>
+  <p>Unser Tagesablauf umfasst den täglichen Spaziergang auf den Spielplatz im Augarten, dann in der Wohnung  viel Zeit einerseits für die Pflegesituationen Essen und Wickeln und andererseits freies Spiel und Bewegung in vorbereiteter Umgebung, danach Mittagschlaf.</p>
+    </div>
+
+  <div class="flex-item" id="text">
+  <h1>Anmeldung</h1>
   <p>Meisten sind die Plätze frühzeitig vergeben, je früher ein Kind für die Tagesbetreuung angemeldet wird, desto wahrscheinlich habe ich noch einen Platz frei. Voraussetzung für einen Betreuungsplatz ist der Besuch des Pikler- Spielraums, den ich im Herbst und im Frühjahr vor dem Betreuungsbeginn anbiete.<br /><br />Bei Fragen und für die Anmeldung - Kontakt</p></div>
-    <div class="flex-item"><img src="img/pflege.jpg" alt="betreuung" /></div> 
- 
-   
 
- 
-		
-  
-		
- 
-		
- 
-
-</div>
+  <div class="flex-item"><img src="img/gruppe.jpg" alt="betreuung" /></div>
 </div>
 
 
+  </div>
   <footer></footer>
 </div>
 
 <script>
 function myFunction() {
-    var x = document.getElementById("myTopnav");
-    if (x.className === "topnav") {
-        x.className += " responsive";
-    } else {
-        x.className = "topnav";
-    }
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+      x.className += " responsive";
+  } else {
+      x.className = "topnav";
+  }
 }
 </script>
-

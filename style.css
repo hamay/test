@@ -7,28 +7,47 @@ html {
   box-sizing: border-box;
 }
 
+
+body {
+  margin: 0;
+}
+
+div#container {
+  font-family: helvetica, arial, sans-serif;
+  font-weight: lighter;
+  line-height: 1.5rem;
+  position: relative;
+}
+
 #main {
   max-width: 56rem;
   margin: 0 auto;
 }
 
 header {
-  background-color: #fac944;
+  background-color: #fcd165;
   text-align: center;
   position: sticky;
   top: 0;
+  z-index: 1010;
 }
 
+.logo {
+
+}
+
+/*
 .header-image {
   height: 30rem;
   background-image: url(img/betreuung.jpg);
   background-size: cover;
   background-position: center;
 }
+*/
 
 .topnav a {
     display: inline-block;
-    color: #f2f2f2;
+    color: #871800;
     padding: 1rem;
     text-decoration: none;
 }
@@ -47,43 +66,15 @@ header {
   z-index: 1000;
 }
 
+h1 {
+  font-size: 20px;
+  color: #871800;
+}
 
 
 /* CONTENT */
 
-.flex-container {
-  display: flex; /* or inline-flex */
-  max-width: 900px;
-  width: 100%;
-  margin: auto;
-  flex-wrap: wrap;
-  justify-content: center;
-}
 
-.flex-item {
-    -webkit-flex-grow: 0; /* Safari 6.1+ */
-    -webkit-flex-shrink: 0; /* Safari 6.1+ */
-    -webkit-flex-basis: 450px; /* Safari 6.1+ */
-    flex-grow: 0;
-    flex-shrink: 1;
-    flex-basis: 450px;
-    justify-content: center;
-    padding: 0px;
-}
-
-#text {
-  padding: 25px;
-  -webkit-flex-basis: 400px;
-  flex-basis: 400px;
-}
-
-#cit {
-  padding-left: 75px;
-  padding-right: 75px;
-  padding-top: 30px;
-  -webkit-flex-basis: 300px;
-  flex-basis: 300px;
-}
 
 .author {
   font-style: normal;
@@ -97,28 +88,11 @@ header {
   font-style: italic;
 }
 
-/* ALLGEMEIN */
+/* ÜBER MICH */
 
-p {
-  font-weight: lighter;
-  line-height: 1.5rem;
+.portrait {
+  float: right;
 }
-
-h1 {
-  font-size: 20px;
-  color: #871800;
-}
-
-body {
-  margin: 0;
-}
-
-div#container {
-  font-family: helvetica, arial, sans-serif;
-  position: relative;
-}
-
-/* MOBILE */
 
 
 @media screen and (max-width: 600px) {
@@ -136,7 +110,7 @@ div#container {
     position: absolute;
     top: 8rem;
     width: 100%;
-    background: #fac944;
+    background: #fcd165;
     padding: 0.5rem 0;
   }
 
@@ -150,8 +124,6 @@ div#container {
     text-align: left;
   }
 
-
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
   .topnav.opened {
     display: block;
     animation: slidein 0.2s linear;
@@ -169,7 +141,7 @@ div#container {
 }
 
 .text {
-  padding: 1.5rem;
+  padding: 0rem 2rem;
 }
 
 .image img {
@@ -185,17 +157,20 @@ div#container {
   .text, .image {
     flex: 1;
     flex-basis: 50%;
+    align-self: center;
   }
   .image img {
     display: block;
   }
-  .text-row:nth-child(even) .image {
+  .text-row:nth-child(odd) .image {
     order: 1;
   }
-  .text-row:nth-child(even) .text {
+  .text-row:nth-child(odd) .text {
     order: 2;
   }
+  /*
   .text-row:nth-child(4) .text {
     font-weight: bold;
   }
+  */
 }

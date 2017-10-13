@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Pikler-SpielRaum</title>
+
+<div id="container">
+
+
+  <header>
+    <div class="logo"><a href="index.html" id="home"><img src="img/logo.png" alt="logo"></a></div>
+
+    <nav class="topnav">
+      <a href="spielraum.html">SpielRaum</a>
+      <a href="termine.html">Termine</a>
+      <a href="uebermich.html">Über mich</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+
+    <a href="javascript:void(0);" style="font-size:15px;" class="menu-toggle" onclick="toggleMenu()">&#9776;</a>
+
+  </header>
+  <div class="balken"></div>
+
+  <div id="main">
+      <div class="impressum">
+        <strong>Fotos, Programmierung und Design:</strong> <a href="mailto:hannah.mayr@gmail.com">Hannah Mayr</a>
+        <br/><br/>
+        <strong>Inhalte:</strong> Daniela Hantsch
+      </div>
+  </div>
+</div>
+
+<script>
+function toggleMenu() {
+  var topNav = document.querySelector(".topnav");
+  topNav.classList.toggle('opened');
+}
+</script>

@@ -12,6 +12,10 @@ body {
   margin: 0;
 }
 
+iframe {
+  padding-top: 2rem;
+}
+
 div#container {
   font-family: helvetica, arial, sans-serif;
   font-weight: lighter;
@@ -29,11 +33,15 @@ header {
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 1010;
+  z-index: 10000;
+  padding-top:1rem;
 }
 
-.logo {
-
+#full {
+height: 800px;
+    background: url(img/raum.jpg);
+    background-size: cover;
+background-position: center;
 }
 
 /*
@@ -53,7 +61,7 @@ header {
 }
 
 .topnav a:hover {
-    background-color: #DC5133;
+    background-color: #fcdd8e;
 }
 
 .menu-toggle {
@@ -67,14 +75,31 @@ header {
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 1.1rem;;
   color: #871800;
 }
 
+.impressum {
+  text-align: center;
+  padding: 2rem;
+}
+
+footer {
+  text-align: center;
+  color: black;
+  padding: 2rem;
+  max-width: 36rem;
+  margin: 5rem auto 0rem;
+  border-top-style: solid;
+  border-top-width: thin;
+}
+
+footer a {
+    color: black;
+    font-size: 0.7em;
+}
 
 /* CONTENT */
-
-
 
 .author {
   font-style: normal;
@@ -90,10 +115,6 @@ h1 {
 
 /* ÜBER MICH */
 
-.portrait {
-  float: right;
-}
-
 
 @media screen and (max-width: 600px) {
   #home {
@@ -103,12 +124,17 @@ h1 {
 
   header {
     position: initial;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+    text-align: left;
+    padding-top: 0;
   }
 
   .topnav {
     display: none;
     position: absolute;
-    top: 8rem;
+    top: 5rem;
     width: 100%;
     background: #fcd165;
     padding: 0.5rem 0;
@@ -117,6 +143,8 @@ h1 {
   a.menu-toggle {
     float: right;
     display: block;
+    color: #871800;
+    top: 2.2rem;
   }
 
   .topnav a {
@@ -128,7 +156,13 @@ h1 {
     display: block;
     animation: slidein 0.2s linear;
   }
+
+  .logo img {
+    height: 5rem;
+  }
 }
+
+
 
 @keyframes slidein {
   from {
@@ -141,7 +175,7 @@ h1 {
 }
 
 .text {
-  padding: 0rem 2rem;
+  padding: 2rem;
 }
 
 .image img {
@@ -149,7 +183,11 @@ h1 {
   max-height: 100%;
 }
 
-@media screen and (min-width: 600px) {
+.image {
+  text-align: center;
+}
+
+@media screen and (min-width: 900px) {
   .text-row {
     display: flex;
     margin: 0 auto;
@@ -162,6 +200,7 @@ h1 {
   .image img {
     display: block;
   }
+
   .text-row:nth-child(odd) .image {
     order: 1;
   }

@@ -33,15 +33,15 @@ header {
   text-align: center;
   position: sticky;
   top: 0;
-  z-index: 10000;
   padding-top:1rem;
+  z-index: 1000;
 }
 
 #full {
-height: 800px;
-    background: url(img/raum.jpg);
-    background-size: cover;
-background-position: center;
+  height: 100vh;
+  background: url(img/raum4.jpg);
+  background-size: cover;
+  background-position: top;
 }
 
 /*
@@ -110,11 +110,11 @@ footer a {
   font-style: normal;
   font-weight: bold;
   text-align: right;
-  color: #50b8a1;
+  color: #871800;
 }
 
 .cit {
-  color: #50b8a1;
+  color: #871800;
   font-style: italic;
 }
 

@@ -38,7 +38,9 @@ header {
 }
 
 #full {
-  height: 100vh;
+  position: relative;
+  margin-top: 0rem;
+  height: calc(100vh);
   background: url(img/raum4.jpg);
   background-size: cover;
   background-position: top;

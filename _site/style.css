@@ -66,6 +66,10 @@ header {
     background-color: #fcdd8e;
 }
 
+.topnav a.active {
+  background-color: black;
+}
+
 .menu-toggle {
   display: none;
   position: absolute;
@@ -74,6 +78,14 @@ header {
   text-decoration: none;
   color: white;
   z-index: 1000;
+}
+
+#mail:link {
+  color: black;
+}
+
+#mail:hover {
+  color: #871800;
 }
 
 h1 {

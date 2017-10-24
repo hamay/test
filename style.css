@@ -67,7 +67,7 @@ header {
 }
 
 .topnav a.active {
-  background-color: black;
+  color: white;
 }
 
 .menu-toggle {
@@ -94,7 +94,7 @@ h1 {
 }
 
 .strong {
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .impressum {

@@ -97,6 +97,10 @@ h1 {
   font-weight: 600;
 }
 
+.nobreak {
+  white-space: nowrap;
+}
+
 .impressum {
   text-align: center;
   padding: 2rem;
